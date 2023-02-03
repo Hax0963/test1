@@ -1,4 +1,7 @@
-local function PlayerAdded(Player)
+
+    local Players = game:GetService('Players')
+
+    local function PlayerAdded(Player)
         local function Chatted(Message)
             local plr = game.Players.LocalPlayer
             local character = plr.Character or plr.CharacterAdded:Wait()
